@@ -1,5 +1,5 @@
 -- queries.sql- Required query checks for survey builds
-
+USE survey_builder;
 -- 1. Total participants per survey
 SELECT s.title, COUNT(DISTINCT a.participant_id) AS participants
 FROM survey_attempts a
