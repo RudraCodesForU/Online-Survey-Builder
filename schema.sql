@@ -2,7 +2,7 @@
 CREATE DATABASE survey_builder;
 USE survey_builder;
 DROP TABLE IF EXISTS survey_answers, survey_attempts, question_bank, surveys, participants, question_conditions, survey_themes;
--- Creation of Table starting with Partiipants
+-- Creation of Table starting with Participants
 CREATE TABLE participants (
     participant_id INT AUTO_INCREMENT PRIMARY KEY,
     identity_type ENUM('registered', 'anonymous') NOT NULL,
